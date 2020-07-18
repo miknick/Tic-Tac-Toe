@@ -1,0 +1,66 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    background: rgba(255,244,143,1);
+    background: -moz-linear-gradient(left, rgba(255,244,143,1) 0%, rgba(78,160,174,1) 28%, rgba(78,160,174,1) 45%, rgba(78,160,174,1) 61%, rgba(57,73,137,1) 78%, rgba(59,46,90,1) 93%, rgba(59,46,90,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,244,143,1)), color-stop(28%, rgba(78,160,174,1)), color-stop(45%, rgba(78,160,174,1)), color-stop(61%, rgba(78,160,174,1)), color-stop(78%, rgba(57,73,137,1)), color-stop(93%, rgba(59,46,90,1)), color-stop(100%, rgba(59,46,90,1)));
+    background: -webkit-linear-gradient(left, rgba(255,244,143,1) 0%, rgba(78,160,174,1) 28%, rgba(78,160,174,1) 45%, rgba(78,160,174,1) 61%, rgba(57,73,137,1) 78%, rgba(59,46,90,1) 93%, rgba(59,46,90,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,244,143,1) 0%, rgba(78,160,174,1) 28%, rgba(78,160,174,1) 45%, rgba(78,160,174,1) 61%, rgba(57,73,137,1) 78%, rgba(59,46,90,1) 93%, rgba(59,46,90,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,244,143,1) 0%, rgba(78,160,174,1) 28%, rgba(78,160,174,1) 45%, rgba(78,160,174,1) 61%, rgba(57,73,137,1) 78%, rgba(59,46,90,1) 93%, rgba(59,46,90,1) 100%);
+    background: linear-gradient(to right, rgba(255,244,143,1) 0%, rgba(78,160,174,1) 28%, rgba(78,160,174,1) 45%, rgba(78,160,174,1) 61%, rgba(57,73,137,1) 78%, rgba(59,46,90,1) 93%, rgba(59,46,90,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff48f', endColorstr='#3b2e5a', GradientType=1 );
+
+}
+.square{
+    width: 150px;
+    height: 100px;
+    background-color: ;
+    border: 1px solid black;
+    margin: 5px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+}
+
+#gameboard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+#buttons{
+    position: absolute;
+    top: 5%;
+    left: 40%;
+
+}
+#buttons button{
+    width: 100px;
+    height: 30px;
+}
+.name{
+    display: flex;
+    margin-bottom: 5px;
+}
+img{
+    margin-right: 5px;
+    width: 25px;
+}
+#winner{
+    position: absolute;
+    top: 75%;
+    left:30%;
+    color:#4ea0ae;
+    background-color:#3b2e5a;
+    width:480px;
+    text-align: center;
+    padding-top:3em ;
+    padding-bottom: 3em;
+    display:none
+}
