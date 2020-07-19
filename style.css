@@ -60,7 +60,8 @@ img{
     background-color:#3b2e5a;
     width:480px;
     text-align: center;
-    padding-top:3em ;
-    padding-bottom: 3em;
-    display:none
+    padding-top:1em ;
+    padding-bottom: 1em;
+    display:none;
+    font-size:40px
 }

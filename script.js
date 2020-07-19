@@ -41,8 +41,11 @@ const game = (() => {
     const resetBoard = function () {
         const squares = document.querySelectorAll(".square")
         const congMessage = document.querySelector("#winner")
-        for (square of squares)
+        for (square of squares) {
             square.innerHTML = ""
+            square.style.backgroundColor = ""
+        }
+
         congMessage.style.display = "none"
         this.changeValue("x")
     }
@@ -96,6 +99,9 @@ const game = (() => {
             return values[2]
 
         }
+        if (this.findEmptySquares().length === 0) {
+            congrulate("tie", User, Ai)
+        }
         return false
     }
     const changeBackground = (index) => {
@@ -105,7 +111,9 @@ const game = (() => {
     }
     const congrulate = function (character, player1, player2) {
         const congMessage = document.querySelector("#winner")
-        if (character === player1.character)
+        if (character === "tie")
+            congMessage.innerHTML = "Tie"
+        else if (character === player1.character)
             congMessage.innerHTML = `${player1.name} is the winner`
         else
             congMessage.innerHTML = `${player2.name} is the winner`
